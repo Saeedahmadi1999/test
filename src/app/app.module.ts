@@ -13,6 +13,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AcountsComponent } from './dashboard/acounts/acounts.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserAcountComponent } from './dashboard/acounts/user.acount/user.acount.component';
+import { CommonModule, APP_BASE_HREF } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -30,9 +31,12 @@ import { UserAcountComponent } from './dashboard/acounts/user.acount/user.acount
     FormsModule,
     MatTableModule,
     MatPaginatorModule,
-    HttpClientModule
+    HttpClientModule,
+    CommonModule,
   ],
-  providers: [],
+  providers: [
+    { provide: APP_BASE_HREF, useValue: '/' },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
