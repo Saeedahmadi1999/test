@@ -1,13 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
-@font-face {
+/* @font-face {
     font-family: Samim;
     src: url('http://fonts.codearena.ir/rastikerdar/samim/samim.eot');
     src: url('http://fonts.codearena.ir/rastikerdar/samim/samim.eot?#iefix') format('embedded-opentype'),
          url('http://fonts.codearena.ir/rastikerdar/samim/samim.woff') format('woff'),
          url('http://fonts.codearena.ir/rastikerdar/samim/samim.ttf') format('truetype');
     font-weight: normal;
-}
+} */
 
 body {
     font-size: 20px;
