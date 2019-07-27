@@ -1,0 +1,23 @@
+table {
+    font-family:cursive;
+    direction: ltr;
+}
+
+th , td {
+    font-size: 20px;
+    text-align: center !important;
+}
+
+.center {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.user-link {
+    color: rgb(69, 69, 70);
+}
+
+.user-link:hover {
+    text-decoration: none;
+    color: rgb(110, 110, 110);
+}

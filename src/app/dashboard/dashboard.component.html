@@ -1,0 +1,30 @@
+<nav class="navbar-fixed-right navbar-expand-sm">
+    <div class="header text-right">
+        <a class="navbar-brand text-secondary" routerLink="/">حسابم</a>
+        <!-- <button class="btn btn-danger">X</button> -->
+    </div>
+    <div class="profile text-right mt-3">
+        <p class="text-light name">{{user}}</p>
+        <p class="text-muted">نام برنامه: برنامه آزمایشی</p>
+        <!-- <i class="fas fa-user-tie text-light user"></i> -->
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" (click)="toggle('list')">
+        <i class="fas fa-sliders-h text-light"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="Toggler" [ngClass]="{'show':collapse}">
+        <div class="options text-right">
+            <ul class="option-list">
+                <li class="opt-item"><a routerLink="acount" routerLinkActive="active" class="text-light mr-2 opt-link">حساب ها</a></li>
+                <li class="opt-item"><a href="" class="text-light mr-2 opt-link">فاکتور ها</a></li>
+                <li class="opt-item"><a href="" class="text-light mr-2 opt-link">کاتالوگ ها</a></li>
+                <li class="opt-item"><a href="" class="text-light mr-2 opt-link">پرداختی ها</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="lists">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+

@@ -1,0 +1,134 @@
+.container1 {
+    width: 70%;    
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+    height: 500px;
+    padding-left: 0;
+    background-color: white;
+}
+
+input.ng-invalid.ng-touched{
+    border: 1px solid red;
+}
+
+.message {
+    font-size: 14px;
+    font-style: italic;
+    color: red;
+}
+
+.wrapper {
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: white;
+    margin: 0;
+}
+
+.header {
+    background-color: rgb(66, 66, 163);
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+input#username, input#password {
+    direction: ltr;
+    text-align: center;
+}
+
+/* input#username:focus, input#password:focus {
+    outline: none;
+    box-shadow: 0 5px 5px rgba(25, 125, 192, 0.863);
+} */
+
+.cover {
+    width: 50%;
+}
+
+#submit {
+    width: 30%;
+    font-size: 20px;
+    font-family: Samim;
+}
+
+.crtacc {
+    border-radius: 25px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+a.password {
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+a.password:hover {
+    color: black;
+}
+
+.signin {
+    color: rgb(17, 127, 170);
+    border: 1px solid rgb(17, 127, 170);
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 6px;
+}
+
+.signin:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(17, 127, 170);
+}
+
+.crtacc {
+    margin: 10px;
+}
+
+@media(max-width: 900px) {
+    .cover {
+        display: none;
+    }
+}
+@media(max-width: 575px) {
+    .cover {
+        display: none;
+    }
+    * {
+        font-size: 15px;
+    }
+    input#username, input#password {
+        padding: 8px;
+        font-size: 15px;
+        outline: none;
+        transition: all 0.5s;
+        margin-bottom: 8px;
+        text-align: center;
+        font-family: samim;
+        
+    }
+
+    #submit {
+        font-size: 15px;
+    }
+
+    .wrapper {
+        border: none;
+    }
+
+    .header h1 {
+        font-size: 15px;
+    }
+
+}
